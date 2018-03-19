@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="weComClient.jnlp">
+  <information>
+    <title>weComClient</title>
+    <vendor>kris</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib/weComServer.jar" size="16957" download="eager" />
+    <jar href="weComClient.jar" size="5902" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="weComClient" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="xyz.robertsen.wecomclient.WeComClient"  name="weComClient" />
+  <update check="always"/>
+</jnlp>
